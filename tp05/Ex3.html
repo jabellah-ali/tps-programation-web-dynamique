@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Interactif</title>
+</head>
+<body>
+  <h2><strong>Quiz Interactif</strong></h2>
+  <button onclick="lancerQuiz()">Démarrer le Quiz</button>
+
+  <script>
+    const QUESTIONS = [
+      ["Quelle est la capitale du Maroc ?", "Rabat"],
+      ["Combien font 13-3 ?", "10"],
+      ["Quelle le réseau de neurone spécialisé en traitemt d'image  ?", "CNN"]
+    ];
+
+    function lancerQuiz() {
+      let bonnesReponses = 0;
+
+      for (let i = 0; i < QUESTIONS.length; i++) {
+        let question = QUESTIONS[i][0];
+        let reponseCorrecte = QUESTIONS[i][1];
+        let reponseUtilisateur = prompt(question);
+        if (reponseUtilisateur !== null && reponseUtilisateur.trim().toLowerCase() === reponseCorrecte.toLowerCase()) {
+          alert("Réponse juste");
+          bonnesReponses++;
+        } else {
+          alert("Réponse fausse");
+        }
+      }
+
+      
+      alert("Vous avez répondu correctement à " + bonnesReponses + " questions sur " + QUESTIONS.length + ".");
+    }
+  </script>
+</body>
+</html>

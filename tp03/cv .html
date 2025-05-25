@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV - JABELLAH ALI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      position: relative;
+    }
+
+    .dark-trigger {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+    }
+
+    .dark-button {
+      background-color: #444;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .dark-trigger:hover ~ .cv {
+      background-color: #111;
+      color: #eee;
+    }
+
+    .dark-trigger:hover ~ .cv .info h1 {
+      color: #eee;
+    }
+
+    .dark-trigger:hover ~ .cv .info p,
+    .dark-trigger:hover ~ .cv .section p,
+    .dark-trigger:hover ~ .cv .section li {
+      color: #ccc;
+    }
+
+    .dark-trigger:hover ~ .cv .section h2 {
+      background-color: #eee;
+      color: #111;
+    }
+
+    .dark-trigger:hover ~ .cv .skill-box {
+      background-color: #333;
+      color: #eee;
+    }
+
+    .cv {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header img {
+      width: 120px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #222;
+    }
+
+    .info p {
+      margin: 5px 0 0 0;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      background-color: #222;
+      color: #fff;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .skills,
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-box {
+      background-color: #eee;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dark-trigger">
+      <div class="dark-button">Mode sombre</div>
+    </div>
+
+    <div class="cv">
+      <div class="header">
+        <div class="header-left">
+          <img src="IMG-20200905-WA0035.jpg" alt="Photo de JABELLAH ALI">
+          <div class="info">
+            <h1>JABELLAH ALI</h1>
+            <p>Étudiant – FPO | Filière : Sciences Mathématiques et Informatique</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>DETAILS</h2>
+        <p>Email : jabellahali@gmail.com</p>
+        <p>Téléphone : +212 6 20645219</p>
+        <p>Adresse : Ouarzazate, Maroc</p>
+      </div>
+
+      <div class="section">
+        <h2>PROFIL</h2>
+        <p>
+          Je suis une personne passionnée par les sciences littéraires et expérimentales, particulièrement par la programmation,
+          l'intelligence artificielle et les mathématiques. Je m'efforce également de construire une base solide dans ma spécialité,
+          d'y faire preuve de créativité et d'en faire profiter mon pays ainsi que ma communauté.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>FORMATION</h2>
+        <ul>
+          <li>Licence en Sciences Mathématiques et Informatique – FPO (2022 - en cours)</li>
+          <li>Baccalauréat Sciences Mathématiques – 2022</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>COMPÉTENCES</h2>
+        <div class="skills">
+          <div class="skill-box">Langage C</div>
+          <div class="skill-box">Java</div>
+          <div class="skill-box">JavaScript</div>
+          <div class="skill-box">HTML / CSS</div>
+          <div class="skill-box">UML</div>
+          <div class="skill-box">MySQL</div>
+          <div class="skill-box">Word / PowerPoint</div>
+          <div class="skill-box">Agile Project Management</div>
+          <div class="skill-box">Génie logiciel</div>
+          <div class="skill-box">CNN (Réseaux de neurones)</div>
+          <div class="skill-box">Assembleur</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>LANGUES</h2>
+        <div class="languages">
+          <div class="skill-box">Arabe : Excellent</div>
+          <div class="skill-box">Tamazight : Langue maternelle</div>
+          <div class="skill-box">Français : Moyen</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+</head>
+<body>
+  <h1>Formulaire d'inscription</h1>
+  <form action="reponse.php" method="POST">
+    <label>Nom :</label>
+    <input type="text" name="nom" required><br><br>
+
+    <label>Prénom :</label>
+    <input type="text" name="prenom" required><br><br>
+
+    <label>Âge :</label>
+    <input type="number" name="age" required><br><br>
+
+    <label>Sexe :</label>
+    <select name="sexe">
+      <option value="Homme">Homme</option>
+      <option value="Femme">Femme</option>
+    </select><br><br>
+
+    <input type="submit" value="Envoyer">
+  </form>
+</body>
+</html>
